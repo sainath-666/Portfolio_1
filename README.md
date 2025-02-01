@@ -20,21 +20,6 @@ The goal was to gain hands-on experience with:
 
 ---
 
-## 📁 Project Structure  
-
-Here’s a quick overview of the files in this project:  
-
-Sample_Webpage_1/
-├── README.md # Project documentation (this file)
-├──
-├── SAI bg.png # Image used in Project
-├── Sainathreddy_Resume.pdf # Resume of Mine
-├── Sample_page_1.mp4 # Video Recording of Project
-├── index.html # Main HTML file
-└── style.css # External CSS file for styling
-
----
-
 ## 🚀 Features  
 
 ### ✅ **Simple Layout**  
