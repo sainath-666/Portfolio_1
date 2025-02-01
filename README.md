@@ -26,6 +26,7 @@ Here’s a quick overview of the files in this project:
 
 Sample_Webpage_1/
 ├── README.md # Project documentation (this file)
+├──
 ├── SAI bg.png # Image used in Project
 ├── Sainathreddy_Resume.pdf # Resume of Mine
 ├── Sample_page_1.mp4 # Video Recording of Project
@@ -79,7 +80,7 @@ Hi, I’m Sai! 👋
 I’m an aspiring web developer passionate about learning new technologies and building exciting projects.  
 
 📂 **GitHub**: [sainath-666](https://github.com/sainath-666)  
-💼 **LinkedIn**: [Sai on LinkedIn](https://www.linkedin.com/in/sainath666)  
+💼 **LinkedIn**: [Sainath666](https://www.linkedin.com/in/sainath666)  
 
 ---
 
