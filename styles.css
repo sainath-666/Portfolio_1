@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("back-image.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 10px;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heding {
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  padding: 14px 40px;
+  border-radius: 16px 16px 0 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+.download-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+.content {
+  margin-top: 3%;
+  max-height: 600px;
+}
+.content h1 {
+  font-size: 70px;
+  color: #222;
+  padding-left: 66px;
+}
+.content p {
+  margin: 10px 0 20px;
+  color: #333;
+  animation-delay: 0.5s;
+  padding-left: 66px;
+  font-size: 20px;
+  max-width: 900px;
+}
+.content .download-btn {
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+  margin-left: 250px;
+  margin-top: 5px;
+}
+.download-btn:hover {
+  border-top-right-radius: 30px;
+}
+.hero-img {
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hero-img.anmi {
+  animation-delay: 1.5s;
+}
+.anmi {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer {
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  padding: 20px 0;
+  font-size: 19px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.footer p {
+  color: #fff;
+}
+.footer a {
+  text-decoration: none;
+  color: #0955ab;
+  margin: 0 8px;
+  font-size: 17px;
+  background-color: #51fb8f;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+.footer a:hover {
+  color: #4627d0;
+  font-size: 20px;
+  background-image: linear-gradient(45deg, #dfc848, #3bd730);
+}
