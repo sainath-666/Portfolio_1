@@ -1,72 +1,51 @@
-# 🌐 Sample Webpage 1  
+# 🌐 Sainath's Portfolio
 
-This is my **first sample webpage** created to practice basic web development concepts! I used **HTML** and **CSS** to build a simple, clean, and functional design.  
+![Portfolio Preview](Preview.png)
 
-The project is hosted using **GitHub Pages** and can be accessed via the link below.  
+## 🔗 [View Live Site](https://sainath-666.github.io/Portfolio_1/)
 
-## 🔗 Live Demo  
+## 📋 About This Project
 
-👉 [Visit Sample Webpage 1](https://sainath-666.github.io/Sample_Webpage_1/)  
+This is my responsive portfolio website built with HTML and CSS. It features a clean design that works well on all devices - from mobile phones to desktop computers.
 
+## 🚀 Features
+
+- **Fully Responsive Design**: Looks great on all devices
+- **Modern UI**: Clean and professional appearance
+- **Animations**: Subtle animations for better user experience
+- **Resume Download**: Easy access to my professional resume
+
+## 💻 Technologies Used
+
+- HTML5
+- CSS3
+- Font Awesome Icons
+- Google Fonts
+
+## 🔧 Setup
+
+1. Clone this repository
+2. Open `index.html` in your browser
+3. That's it!
+
+## 📱 Responsive Design
+
+The website is fully responsive with carefully crafted media queries that ensure optimal viewing experience across a wide range of devices:
+
+- Desktop (1200px and above)
+- Laptop (992px - 1199px)
+- Tablet (768px - 991px)
+- Mobile (576px - 767px)
+- Small Mobile (below 576px)
+
+## 📬 Contact
+
+Feel free to reach out to me through my social media links on the website!
 ---
 
-## 📋 Overview  
+<div align="center">
+  <p>Made with ❤️ by Your Sainathreddy</p>
+</div>
 
-This project serves as a beginner's experiment to build, structure, and style a webpage using core web technologies.  
-The goal was to gain hands-on experience with:  
-- Creating semantic HTML structures.  
-- Styling elements using external CSS.  
-- Publishing projects via GitHub Pages.  
-
----
-
-## 🚀 Features  
-
-### ✅ **Simple Layout**  
-- A clean and straightforward design focused on readability.  
-
-### ✅ **HTML & CSS**  
-- Built entirely using HTML for structure and CSS for styling.  
-
-### ✅ **Easy to Navigate**  
-- Well-organized code for beginners to understand and follow.  
-
----
-
-## 🎯 Key Learnings  
-
-- Setting up and structuring a webpage using semantic HTML.  
-- Writing and linking external CSS files for consistent styling.  
-- Deploying projects on GitHub Pages for public access.  
-
----
-
-## 💡 Future Enhancements  
-
-Here are a few ideas I plan to implement in future versions:  
-
-1. Add **JavaScript** for interactivity (e.g., animations, form validations).  
-2. Improve responsiveness for mobile and tablet devices using **Media Queries**.  
-3. Experiment with modern CSS frameworks like **Bootstrap** or **Tailwind CSS**.  
-4. Include additional pages (e.g., About, Contact) to create a multipage website.  
-
----
-
-## 📸 Screenshot  
-
-![Sample Webpage Screenshot](https://github.com/sainath-666/Sample_Webpage_1/blob/main/Sample_page_1.mp4)  
-
-
----
-
-## 👨‍💻 About Me  
-
-Hi, I’m Sai! 👋  
-I’m an aspiring web developer passionate about learning new technologies and building exciting projects.  
-
-📂 **GitHub**: [sainath-666](https://github.com/sainath-666)  
-💼 **LinkedIn**: [Sainath666](https://www.linkedin.com/in/sainath666)  
-
----
-
-### ⭐️ If you found this project helpful, feel free to give it a star! ⭐️  
+[https://github.com/sainath-666](https://github.com/sainath-666)
+[https://www.linkedin.com/in/sainath666](https://www.linkedin.com/in/sainath666)

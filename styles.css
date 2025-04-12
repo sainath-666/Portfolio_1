@@ -4,120 +4,404 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0a192f;
+  color: #e6f1ff;
+}
+
+:root {
+  --primary: #64ffda;
+  --secondary: #0a192f;
+  --text: #ccd6f6;
+  --text-secondary: #8892b0;
+  --bg: #0a192f;
+  --highlight: #64ffda;
+  --nav-height: 80px;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(45deg, #f2dbe4, #e8eda6);
+  background-color: var(--bg);
   background-size: cover;
   background-position: center;
-  padding: 10px 10px;
-  overflow: hidden;
+  padding: 0 50px;
+  overflow-x: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 nav {
-  padding: 10px 0;
+  padding: 25px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 25, 47, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  padding: 0 50px;
+  height: var(--nav-height);
+  transition: var(--transition);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 }
+
 .heding {
-  background-image: linear-gradient(45deg, #df4881, #c430d7);
-  padding: 14px 40px;
-  border-radius: 16px 16px 0 0;
+  color: var(--primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: var(--transition);
+  letter-spacing: 1px;
 }
+
+.heding:hover {
+  color: var(--highlight);
+  transform: translateY(-2px);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin: 10px 15px;
+  counter-increment: item 1;
 }
+
 nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 400;
+  color: var(--text);
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "0" counter(item) ".";
+  margin-right: 5px;
+  color: var(--primary);
+  font-size: 14px;
+  text-align: right;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
 }
 
 .download-btn {
   display: inline-block;
   text-decoration: none;
-  padding: 14px 40px;
-  color: #fff;
-  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  padding: 1.25rem 1.75rem;
+  color: var(--primary);
+  background-color: transparent;
   font-size: 14px;
-  border-radius: 30px;
-  border-top-right-radius: 0;
-  transition: 0.5s;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  transition: var(--transition);
+  font-family: "SF Mono", "Fira Code", monospace;
+  line-height: 1;
+  cursor: pointer;
 }
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--nav-height);
+  padding: 100px 0;
+  width: 100%;
+}
+
 .content {
-  margin-top: 3%;
-  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  max-width: 50%;
+  padding-right: 20px;
 }
+
 .content h1 {
-  font-size: 70px;
-  color: #222;
-  padding-left: 66px;
-}
-.content p {
-  margin: 10px 0 20px;
-  color: #333;
-  animation-delay: 0.5s;
-  padding-left: 66px;
-  font-size: 20px;
-  max-width: 900px;
-}
-.content .download-btn {
-  padding: 15px 80px;
+  margin: 0 0 30px 4px;
+  color: var(--primary);
+  font-family: "SF Mono", "Fira Code", monospace;
   font-size: 16px;
-  animation-delay: 1s;
-  margin-left: 250px;
-  margin-top: 5px;
+  font-weight: 400;
 }
+
+.content h2 {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.content h3 {
+  margin-top: 10px;
+  color: var(--text-secondary);
+  line-height: 0.9;
+  font-size: clamp(30px, 5vw, 50px);
+}
+
+.content p {
+  margin: 20px 0 0;
+  max-width: 540px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.content .download-btn {
+  margin-top: 50px;
+}
+
 .download-btn:hover {
-  border-top-right-radius: 30px;
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-3px);
+  outline: none;
 }
+.hero-img-container {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-img {
-  width: 530px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+  transition: var(--transition);
+  z-index: 1;
 }
+
+.hero-img-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid var(--primary);
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.hero-img-container:hover::after {
+  top: 15px;
+  left: 15px;
+}
+
 .hero-img.anmi {
   animation-delay: 1.5s;
 }
+
 .anmi {
   opacity: 0;
   transform: translateY(30px);
-  animation: moveup 0.5s linear forwards;
+  animation: moveup 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 }
+
 @keyframes moveup {
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .footer {
-  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  background-color: var(--bg);
   padding: 20px 0;
-  font-size: 19px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  font-size: 14px;
+  width: 100%;
   text-align: center;
+  margin-top: auto;
 }
+
 .footer p {
-  color: #fff;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-family: "SF Mono", "Fira Code", monospace;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
 .footer a {
   text-decoration: none;
-  color: #0955ab;
-  margin: 0 8px;
-  font-size: 17px;
-  background-color: #51fb8f;
-  padding: 3px 10px;
-  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+  background-color: transparent;
+  border-radius: 4px;
 }
+
+.footer a i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
 .footer a:hover {
-  color: #4627d0;
-  font-size: 20px;
-  background-image: linear-gradient(45deg, #dfc848, #3bd730);
+  color: var(--primary);
+  transform: translateY(-3px);
+  background-color: transparent;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 20px;
+  color: var(--text-secondary);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    padding: 0 30px;
+  }
+  
+  nav {
+    padding: 0 25px;
+  }
+  
+  .main-container {
+    padding: 80px 0;
+  }
+  
+  .content {
+    max-width: 55%;
+  }
+  
+  .hero-img-container {
+    width: 40%;
+  }
+  
+  .hero-img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0 20px;
+  }
+  
+  nav {
+    padding: 0 15px;
+  }
+  
+  nav ul {
+    gap: 15px;
+  }
+  
+  .main-container {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  
+  .content {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  
+  .content p {
+    font-size: 16px;
+  }
+  
+  .hero-img-container {
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .hero-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    padding: 0 15px;
+  }
+  
+  nav {
+    padding: 0 10px;
+  }
+  
+  .heding {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    display: none; /* Hide navigation on small screens */
+  }
+  
+  .main-container {
+    padding: 50px 0;
+  }
+  
+  .content {
+    margin-bottom: 40px;
+  }
+  
+  .content p {
+    font-size: 15px;
+  }
+  
+  .hero-img-container {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .hero-img-container::after {
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .footer a {
+    padding: 8px;
+    font-size: 13px;
+  }
 }
